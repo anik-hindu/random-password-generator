@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="./script.js"></script>
   </head>
   <body>
     <div class="main">
@@ -18,11 +19,25 @@
         Generate a <br /><span id="highlight">random password</span>
       </h1>
       <p class="support-main">Never use an insecure password again.</p>
-      <button>Generate Password</button>
+      <div class="password-length">
+        <label for="password-length">Password Length</label>
+        <input
+          type="range"
+          id="password-length"
+          name="Length"
+          min="8"
+          max="20"
+          value="15"
+          step="1"
+          oninput="currentLength.value = this.value"
+        />
+        <output id="currentLength">15</output>
+      </div>
+      <button id="generate-btn">Generate passwords</button>
       <div class="line"></div>
       <div class="password-container">
-        <div class="password"></div>
-        <div class="password"></div>
+        <div class="password" id="password-one"></div>
+        <div class="password" id="password-two"></div>
       </div>
     </div>
   </body>
