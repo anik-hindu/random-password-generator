@@ -6,7 +6,7 @@ body {
 
 .main {
   box-sizing: border-box;
-  height: 550px;
+  height: 100%;
   max-width: 550px;
   background-color: #1f2937;
   margin: 16px auto;
@@ -33,7 +33,11 @@ body {
   font-size: 20px;
 }
 
-button {
+fieldset {
+  color: white;
+}
+
+#generate-btn {
   font-size: 16px;
   color: white;
   padding: 8px 16px;
@@ -51,14 +55,15 @@ button {
 }
 
 .password-container {
-  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .password {
   box-sizing: border-box;
+  text-align: center;
   background-color: #273549;
+  border: none;
   height: 32px;
   width: 200px;
   border-radius: 6px;
@@ -66,6 +71,7 @@ button {
   font-size: 16px;
   color: #5def92;
   line-height: 32px;
+  margin-bottom: 8px;
 }
 
 .password-length {

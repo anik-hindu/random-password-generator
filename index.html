@@ -33,11 +33,25 @@
         />
         <output id="currentLength">15</output>
       </div>
+      <fieldset class="characters">
+        <legend>Select Characters</legend>
+        <input type="checkbox" name="uppercase" id="upperCase" checked />
+        <label for="upperCase">UpperCase</label>
+
+        <input type="checkbox" name="lowercase" id="lowerCase" checked />
+        <label for="lowerCase">LowerCase</label>
+
+        <input type="checkbox" name="symbols" id="symbols" checked />
+        <label for="symbols">Symbols</label>
+
+        <input type="checkbox" name="numbers" id="numbers" checked />
+        <label for="numbers">Numbers</label>
+      </fieldset>
       <button id="generate-btn">Generate passwords</button>
       <div class="line"></div>
       <div class="password-container">
-        <div class="password" id="password-one"></div>
-        <div class="password" id="password-two"></div>
+        <button class="password" id="password-one"></button>
+        <button class="password" id="password-two"></button>
       </div>
     </div>
   </body>
